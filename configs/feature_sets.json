@@ -1,0 +1,44 @@
+{
+  "feature_sets": {
+    "all_market_v1": [
+      "soxx_ret_1d",
+      "soxx_ret_5d",
+      "soxx_ret_20d",
+      "soxx_vol_20d",
+      "soxx_volume_z20",
+      "soxl_ret_1d",
+      "soxl_ret_5d",
+      "soxl_ret_20d",
+      "soxl_vol_20d",
+      "soxl_volume_z20",
+      "smh_ret_1d",
+      "smh_ret_5d",
+      "smh_ret_20d",
+      "smh_vol_20d",
+      "smh_volume_z20",
+      "soxx_smh_ret_spread_5d",
+      "soxl_leverage_realized_5d",
+      "soxx_drawdown_20d"
+    ],
+    "primary_only_v1": [
+      "soxx_ret_1d",
+      "soxx_ret_5d",
+      "soxx_ret_20d",
+      "soxx_vol_20d",
+      "soxx_volume_z20",
+      "soxx_drawdown_20d"
+    ],
+    "cross_asset_v1": [
+      "soxx_ret_5d",
+      "soxx_ret_20d",
+      "soxx_vol_20d",
+      "soxl_ret_5d",
+      "soxl_vol_20d",
+      "smh_ret_5d",
+      "smh_vol_20d",
+      "soxx_smh_ret_spread_5d",
+      "soxl_leverage_realized_5d",
+      "soxx_drawdown_20d"
+    ]
+  }
+}

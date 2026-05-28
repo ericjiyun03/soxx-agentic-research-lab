@@ -1,0 +1,30 @@
+{
+  "project": "soxx-soxl-agentic-research-lab",
+  "as_of_date": "2026-05-07",
+  "start_date": "2018-01-01",
+  "end_date": "2026-05-07",
+  "tickers": ["SOXX", "SOXL", "SMH"],
+  "primary_ticker": "SOXX",
+  "leveraged_ticker": "SOXL",
+  "comparison_ticker": "SMH",
+  "feature_set": "all_market_v1",
+  "feature_sets_path": "configs/feature_sets.json",
+  "horizons": [1, 5],
+  "train_window_rows": 252,
+  "min_train_rows": 252,
+  "prediction_stride": 5,
+  "max_backtest_predictions": 25,
+  "long_threshold": 0.55,
+  "short_threshold": 0.45,
+  "transaction_cost_bps": 5.0,
+  "logistic": {
+    "epochs": 50,
+    "learning_rate": 0.08,
+    "l2": 0.01
+  },
+  "ridge": {
+    "epochs": 50,
+    "learning_rate": 0.05,
+    "l2": 0.1
+  }
+}
