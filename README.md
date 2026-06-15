@@ -56,3 +56,31 @@ Then run the graph with optional tags:
 ```
 
 Generated artifacts and cached market data are ignored by git.
+
+## Generate A Research Memo
+
+Create a Step 7 artifact directory with the graph runner:
+
+```bash
+./.venv/bin/python scripts/run_soxx_graph.py \
+  --config configs/backtest_full.json \
+  --sample-data \
+  --output-dir artifacts/soxx_step7_sample \
+  --run-id step7-sample
+```
+
+Then generate a cited post-run memo from that artifact directory:
+
+```bash
+ANTHROPIC_API_KEY=... \
+./.venv/bin/python scripts/run_research_memo.py \
+  --artifact-dir artifacts/soxx_step7_sample
+```
+
+For a deterministic smoke run without an API call:
+
+```bash
+./.venv/bin/python scripts/run_research_memo.py \
+  --artifact-dir artifacts/soxx_step7_sample \
+  --provider template
+```

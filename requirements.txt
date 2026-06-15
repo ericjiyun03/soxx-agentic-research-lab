@@ -3,3 +3,4 @@ pandas
 scikit-learn
 langgraph>=1.0,<2.0
 langsmith
+anthropic
